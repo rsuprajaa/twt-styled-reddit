@@ -1,0 +1,33 @@
+* {
+  --color-primary: #1da1f2;
+  --color-primary-hover: rgba(29, 161, 242, 0.1);
+  --text-primary: #c5c5c5;
+  --text-gray: #6e767d;
+  --background: #000;
+  --gray: #202327;
+  --gray-lightest: #2b2f31;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: var(--background);
+  color: var(--text-primary);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.active {
+  color: var(--color-primary);
+  border-bottom: 2px solid var(--color-primary);
+}
