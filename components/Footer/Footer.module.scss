@@ -1,0 +1,12 @@
+.footer {
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1000px) {
+  .footer {
+    margin: 7rem 15% 0;
+  }
+}

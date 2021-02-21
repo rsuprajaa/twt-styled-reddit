@@ -45,3 +45,15 @@
     }
   }
 }
+
+@media (max-width: 1000px) {
+  .navbar {
+    width: 72%;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    width: 100%;
+  }
+}

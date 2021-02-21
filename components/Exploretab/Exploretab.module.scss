@@ -1,4 +1,22 @@
 .center_tab {
   width: 50%;
-  margin: auto;
+  margin: 0 37.5%;
+}
+
+.sidebar {
+  padding: 0;
+}
+
+@media (max-width: 1000px) {
+  .center_tab {
+    width: 80%;
+    margin: 0 15.5%;
+  }
+}
+
+@media (max-width: 600px) {
+  .center_tab {
+    width: 100%;
+    margin: 0;
+  }
 }
