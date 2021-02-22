@@ -23,9 +23,15 @@
     border-style: solid;
     border-width: 1px 0;
     word-wrap: break-word;
+    cursor: pointer;
     &:last-of-type {
       border: 0;
       padding-bottom: 0;
+    }
+    &:hover {
+      background-color: var(--gray-hover);
+      text-decoration: underline;
+      transition: all 0.3s ease;
     }
   }
 }

@@ -7,11 +7,11 @@ const Sidebar = ({ subreddits }) => {
                   <h4 className={styles.sidebar_heading}>Popular Subcommunities</h4>
                   <ul>
                         {subreddits.slice(0,10).map((subreddit) => (
-                              <li key = {subreddit.data.id}>
-                                    <Link href= {`/${subreddit.data.display_name_prefixed}`}>
+                              <Link href={`/${subreddit.data.display_name_prefixed}`} key = {subreddit.data.id}>
+                                    <li>
                                           <a>{subreddit.data.display_name_prefixed}</a>
-                                    </Link>
-                              </li>
+                                    </li>
+                              </Link>
                         ))}
                   </ul>
             </div>

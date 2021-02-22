@@ -1,9 +1,12 @@
+import { useRouter } from "next/router"
 import Exploretab from "../components/ExploreTab/Exploretab"
 import Layout from '../components/Layout/Layout'
 
 const search = ({ data, popularSubreddits }) => {
+      const router = useRouter()
+      const { q } = router.query
       return (
-            <Layout title = "Search Results">
+            <Layout title = {`${q} - Reddit clone search results`}>
                   <div>
                   <Exploretab posts = {data} popularSubreddits={popularSubreddits}/>
                   </div>
