@@ -10,6 +10,9 @@
   .subreddit {
     font-weight: 700;
     font-size: 0.9rem;
+    &:hover {
+      text-decoration: underline;
+    }
   }
   .author {
     font-size: 0.9rem;

@@ -1,0 +1,86 @@
+.card {
+  border: 1px solid var(--gray-lightest);
+  border-top: none;
+  padding: 0.5rem 1rem;
+  display: grid;
+  grid-template-columns: 0.1fr 0.9fr;
+  .profileimg {
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-dark);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+    .firstletter {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--background);
+    }
+  }
+  .content {
+    margin-left: 0.5rem;
+    .details {
+      .subreddit {
+        font-weight: 700;
+      }
+      .author {
+        font-size: 0.9rem;
+        color: var(--text-gray);
+      }
+    }
+    .title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin: 0.5rem 0 0.8rem 0;
+    }
+    .post_image {
+      width: 90%;
+      padding: 1rem;
+    }
+    .stats {
+      width: 40%;
+      display: flex;
+      justify-content: space-between;
+      color: var(--text-gray);
+      .icons {
+        font-size: 0.9rem;
+        margin-top: 0.4rem;
+      }
+      .comments,
+      .upvotes {
+        display: flex;
+        align-items: center;
+      }
+      .comments {
+        .icons {
+          margin-right: 0.2rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    .profileimg {
+      width: 40px;
+      height: 40px;
+      .firstletter {
+        font-size: 18px;
+      }
+    }
+    .content {
+      .title {
+        font-size: 1.1rem;
+      }
+      .post_image {
+        width: 100%;
+      }
+      .stats {
+        width: 50%;
+      }
+    }
+  }
+}

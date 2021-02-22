@@ -1,10 +1,13 @@
 import Exploretab from '../components/ExploreTab/Exploretab'
+import Layout from '../components/Layout/Layout'
 
 export default function Home({data, popularSubreddits}) {
   return (
+    <Layout title = "Reddit clone | Top posts">
     <div>
       <Exploretab posts={data} popularSubreddits={popularSubreddits}/>
     </div>
+    </Layout>
   )
 }
 

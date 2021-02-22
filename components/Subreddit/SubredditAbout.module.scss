@@ -1,0 +1,128 @@
+.about {
+  border: 1px solid var(--gray-lightest);
+  padding-bottom: 1rem;
+  .header {
+    height: 30vh;
+    width: 100%;
+    background-color: var(--primary-pastel);
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    .header_title {
+      color: var(--background);
+      font-size: 1.2rem;
+      font-weight: 700;
+      padding: 0.5rem;
+    }
+    .profile_img {
+      border-radius: 100px;
+      background-color: var(--primary-pastel);
+      height: 140px;
+      width: 140px;
+      position: absolute;
+      bottom: -28%;
+      left: 3%;
+      border: 5px solid var(--background);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .firstletter {
+        color: var(--background);
+        font-size: 3rem;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .content {
+    margin: 3.5rem 1rem 0;
+    .btn {
+      cursor: pointer;
+      border: 1px solid var(--color-primary);
+      color: var(--color-primary);
+      font-weight: 700;
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      float: right;
+      &:hover {
+        background-color: var(--color-primary-hover);
+        transition: all 0.2s ease-out;
+      }
+    }
+    h3 {
+      color: var(--text-primary);
+      margin: 0;
+      font-size: 1.4rem;
+    }
+    p {
+      margin: 0;
+      color: var(--text-gray);
+    }
+    .bio {
+      .sparkle {
+        color: var(--color-primary);
+      }
+      color: var(--text-primary);
+      font-size: 1.2rem;
+    }
+    .description {
+      color: var(--text-gray);
+    }
+    .stats {
+      display: flex;
+      align-items: center;
+      margin-top: 1.3rem;
+      .highlight {
+        color: var(--text-primary);
+      }
+      p {
+        margin-right: 2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .about {
+    .header {
+      .profile_img {
+        height: 100px;
+        width: 100px;
+        bottom: -15%;
+        border: 2px solid var(--background);
+        .firstletter {
+          font-size: 2rem;
+        }
+      }
+    }
+    .content {
+      margin: 2rem 1rem 0;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .about {
+    .header {
+      .profile_img {
+        height: 60px;
+        width: 60px;
+        bottom: -15%;
+        border: 3px solid var(--background);
+        .firstletter {
+          font-size: 1.5rem;
+        }
+      }
+      .header_title {
+        font-size: 1rem;
+      }
+    }
+    .content {
+      margin: 1.5rem 1rem 0;
+      h3 {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

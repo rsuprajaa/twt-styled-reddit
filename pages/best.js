@@ -1,10 +1,13 @@
 import Exploretab from "../components/ExploreTab/Exploretab"
+import Layout from "../components/Layout/Layout"
 
 const best = ({data, popularSubreddits}) => {
       return (
+            <Layout title = "Reddit clone | Best">
             <div>
                   <Exploretab posts={data} popularSubreddits={popularSubreddits}/>     
             </div>
+            </Layout>
       )
 }
 

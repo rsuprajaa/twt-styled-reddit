@@ -1,0 +1,18 @@
+.subreddittab {
+  width: 50%;
+  margin: 0 37.5%;
+}
+
+@media (max-width: 1000px) {
+  .subreddittab {
+    width: 80%;
+    margin: 0 15.5%;
+  }
+}
+
+@media (max-width: 600px) {
+  .subreddittab {
+    width: 100%;
+    margin: 0;
+  }
+}
