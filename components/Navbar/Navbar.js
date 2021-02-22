@@ -15,8 +15,8 @@ const Navbar = () => {
             <div className = {styles.navbar}> 
                   <div><input type="text" name = "search" placeholder = "Search"  onKeyPress={searchHandler} value = {searchTerm} onChange = {(e)=>setSearchTerm(e.target.value)}></input></div>
                   <div className={styles.nav__links}>                    
-                              <li className={router.pathname == '/' ? 'active' : ''}>
-                                    <Link href='/'><a>Top</a></Link>
+                              <li className={router.pathname == '/top' ? 'active' : ''}>
+                                    <Link href='/top'><a>Top</a></Link>
                               </li>
                               <li className = {router.pathname == '/best' ? 'active': ''}>
                                     <Link href='/best'><a>Best</a></Link>

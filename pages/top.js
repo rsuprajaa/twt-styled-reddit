@@ -3,7 +3,7 @@ import Layout from '../components/Layout/Layout'
 
 export default function Home({data, popularSubreddits}) {
   return (
-    <Layout title = "Reddit Clone">
+    <Layout title = "Reddit Clone | Top posts">
     <div>
       <Exploretab posts={data} popularSubreddits={popularSubreddits}/>
     </div>
@@ -12,7 +12,7 @@ export default function Home({data, popularSubreddits}) {
 }
 
 export const getServerSideProps = async () => {
-  const response = await fetch('https://www.reddit.com/new.json')
+  const response = await fetch('https://www.reddit.com/top.json')
   const { data } = await response.json()
   const popularSubredditsResponse = await fetch('https://www.reddit.com/subreddits/popular.json')
   const popularSubreddits = await popularSubredditsResponse.json()
