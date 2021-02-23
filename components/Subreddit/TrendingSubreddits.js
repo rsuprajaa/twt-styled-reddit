@@ -8,7 +8,7 @@ const TrendingSubreddits = ({ trendingSubreddits }) => {
                   <ul>
                         {trendingSubreddits.map((subreddit, idx) => (
                               <Link href={`/r/${subreddit}`} key = {idx}>
-                              <li className={styles.list_item}>{subreddit}</li>
+                              <li className={styles.list_item}>r/{subreddit}</li>
                               </Link>
                   ))}
                   </ul>
