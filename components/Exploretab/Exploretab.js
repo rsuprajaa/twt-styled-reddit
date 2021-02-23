@@ -1,5 +1,5 @@
 import Card from '../Card/Card'
-import Sidebar from '../SideBar/SideBar'
+import Sidebar from '../Sidebar/Sidebar'
 import styles from './Exploretab.module.scss'
 
 const Exploretab = ({ posts, popularSubreddits }) => {
