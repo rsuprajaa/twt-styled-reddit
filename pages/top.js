@@ -1,7 +1,7 @@
 import Exploretab from '../components/ExploreTab/Exploretab'
 import Layout from '../components/Layout/Layout'
 
-export default function Home({data, popularSubreddits}) {
+const top = ({data, popularSubreddits})=> {
   return (
     <Layout title = "Reddit Clone | Top posts">
     <div>
@@ -10,6 +10,8 @@ export default function Home({data, popularSubreddits}) {
     </Layout>
   )
 }
+
+export default top
 
 export const getServerSideProps = async () => {
   const response = await fetch('https://www.reddit.com/top.json')
