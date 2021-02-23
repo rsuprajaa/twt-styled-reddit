@@ -3,7 +3,7 @@ import Layout from '../components/Layout/Layout'
 
 export default function Home({data, popularSubreddits}) {
   return (
-    <Layout title = "Reddit Clone">
+    <Layout>
     <div>
       <Exploretab posts={data} popularSubreddits={popularSubreddits}/>
     </div>

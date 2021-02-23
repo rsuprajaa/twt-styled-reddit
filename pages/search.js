@@ -6,7 +6,7 @@ const search = ({ data, popularSubreddits }) => {
       const router = useRouter()
       const { q } = router.query
       return (
-            <Layout title = {`${q} - Reddit clone search results`}>
+            <Layout title = {`${q} - search results`}>
                   <div>
                   <Exploretab posts = {data} popularSubreddits={popularSubreddits}/>
                   </div>

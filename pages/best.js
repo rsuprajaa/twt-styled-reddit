@@ -3,7 +3,7 @@ import Layout from "../components/Layout/Layout"
 
 const best = ({data, popularSubreddits}) => {
       return (
-            <Layout title = "Reddit clone | Best">
+            <Layout title = "reddit | Best">
             <div>
                   <Exploretab posts={data} popularSubreddits={popularSubreddits}/>     
             </div>

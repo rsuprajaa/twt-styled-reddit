@@ -3,7 +3,7 @@ import Layout from "../components/Layout/Layout"
 
 const hot = ({data, popularSubreddits}) => {
       return (
-            <Layout title = "Reddit clone | Hot">
+            <Layout title = "reddit | Hot">
             <div>
                   <Exploretab posts={data} popularSubreddits={popularSubreddits}/>
             </div>
