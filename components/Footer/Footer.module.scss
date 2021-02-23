@@ -3,6 +3,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  .link {
+    font-size: 0.8rem;
+    color: var(--text-gray);
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 @media (max-width: 1000px) {
