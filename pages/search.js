@@ -1,5 +1,5 @@
 import { useRouter } from "next/router"
-import Exploretab from "../components/ExploreTab/Exploretab"
+import Exploretab from '../components/Exploretab/Exploretab'
 import Layout from '../components/Layout/Layout'
 
 const search = ({ data, popularSubreddits }) => {

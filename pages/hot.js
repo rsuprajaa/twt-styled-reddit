@@ -1,4 +1,4 @@
-import Exploretab from "../components/ExploreTab/Exploretab"
+import Exploretab from '../components/Exploretab/Exploretab'
 import Layout from "../components/Layout/Layout"
 
 const hot = ({data, popularSubreddits}) => {
