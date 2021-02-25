@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Router from 'next/router'
 import NProgress from 'nprogress';
-import Footer from '../Footer/Footer';
 import Menu from '../Menu/Menu';
 import Navbar from '../Navbar/Navbar'
 import styles from './Layout.module.scss'
@@ -22,8 +21,7 @@ const Layout = ({ children, title = 'reddit' }) => {
             <Navbar/>
             <div className = {styles.container}>
                   {children}
-            </div>
-            <Footer/>      
+            </div>  
             </>
       )
 }

@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import styles from './TrendingSubreddits.module.scss'
 const TrendingSubreddits = ({ trendingSubreddits }) => {
-      console.log(trendingSubreddits)
       return (
             <div className={styles.container}>
                   <h4>Trending Subreddits</h4>
