@@ -8,7 +8,7 @@ const SubredditTab = ({ about, posts, trendingSubreddits }) => {
             <div className = {styles.subreddittab}>
                   <SubredditAbout about={about}/>
                   <SubredditPosts posts={posts} />
-                  <TrendingSubreddits trendingSubreddits={trendingSubreddits}/>
+                  {/* <TrendingSubreddits trendingSubreddits={trendingSubreddits}/> */}
             </div>
       )
 }

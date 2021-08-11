@@ -24,7 +24,7 @@ export const getServerSideProps = async({ params }) => {
             props: {
                   about: about.data,
                   posts: posts.data.children,
-                  trendingSubreddits: trendingSubreddits.subreddit_names
+                  trendingSubreddits: {}
             }
       }
 }
